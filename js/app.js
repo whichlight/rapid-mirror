@@ -60,7 +60,9 @@ var drawVideo = function(){
 
 var resizeCanvas = function(){
   canvas.width = document.body.clientWidth+1;
+  if(canvas.width%2 == 1){canvas.width++;}
   canvas.height = document.body.clientHeight+1;
+  if(canvas.height%2 == 1){canvas.height++;}
 }
 
 var processImage = function(){
