@@ -59,8 +59,8 @@ var drawVideo = function(){
 }
 
 var resizeCanvas = function(){
-  canvas.width = document.body.clientWidth;
-  canvas.height = document.body.clientHeight;
+  canvas.width = document.body.clientWidth+1;
+  canvas.height = document.body.clientHeight+1;
 }
 
 var processImage = function(){
